@@ -1,0 +1,65 @@
+/***********************************************************
+
+AINA SHIBU                                  ROLL NO:4
+S3 IT                                       DATE:
+              ADD TWO MATRICES
+************************************************************/
+M1 =[]
+M2 =[]
+M3 =[]
+n =int(input("Enter the number of rows:"))
+m =int (input("Enter the number of columns:"))
+print("Enter the values of first matrix :")
+for i in range (0,n):
+	r=[]
+	for j in range (0,m):
+		val=int(input())
+		r.append (val)
+	M1.append(r)
+print ("M1=",M1)
+print ("Enter the values of second matrix:")
+for i in range (0,n):
+	r=[]
+	for j in range(0,m):
+		val=int (input())
+		r.append(val)
+	M2.append(r)
+print ("M2",M2)
+for i in range (0,n):
+	r=[]
+	for j in range (0,m):
+		val=M1[i][j]+M2[i][j]
+		r.append(val)
+	M3.append(r)
+print ("The sum of the matrixesare:",M3)
+
+/*SAMPLE OUTPUT*/
+/*********************************************************
+Z:\S3IT\PYTHON\LAB>matrix.py
+Enter the number of rows:3
+Enter the number of columns:3
+Enter the values of first matrix :
+2
+4
+6
+8
+2
+4
+6
+8
+2
+M1= [[2, 4, 6], [8, 2, 4], [6, 8, 2]]
+Enter the values of second matrix:
+6
+4
+8
+2
+6
+4
+8
+2
+6
+M2 [[6, 4, 8], [2, 6, 4], [8, 2, 6]]
+The sum of the matrixesare: [[8, 8, 14], [10, 8, 8], [14, 10, 8]]
+
+*********************************************************************/

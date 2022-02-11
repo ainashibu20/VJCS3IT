@@ -1,0 +1,27 @@
+/***************************************************
+AINA SHIBU                             ROLL NO:4
+S3 IT                                  DATE:
+
+    OCCURANCES OF A SUBSTRING IN A STRING
+
+**************************************************/
+
+
+
+s=str(input("Enter the string:"))
+ss=str(input("Enter the substring:"))
+s.lower()
+ss.lower()
+print(s)
+c=s.count(ss)
+print("The number of occurance is:",c)
+
+/*SAMPLE OUTPUT*/
+
+/***************************************************
+Z:\S3IT\PYTHON\LAB>occurance.py
+Enter the string:WHAT A PLEASANT DAY!
+Enter the substring:PLEASANT
+WHAT A PLEASANT DAY!
+The number of occurance is: 1
+****************************************************/

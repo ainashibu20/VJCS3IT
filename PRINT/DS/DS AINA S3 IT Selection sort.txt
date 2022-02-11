@@ -1,0 +1,58 @@
+/**********************************************************************
+AINA SHIBU                                     ROLL NO:4
+S3 IT                                          DATE: 06/12/21
+                SELECTION SORT
+
+
+**********************************************************************/                
+
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int A[50],i,j, temp,n,min;
+	printf("Enter the number of elements: ");
+	scanf("%d",&n);
+	printf("Enter the array elements: ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&A[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		min=i;
+		for(j=i+1;j<n;j++)
+		{
+			if(A[min]>A[j])
+			min=j;
+		}
+		if(min!=i)
+		{
+			temp=A[i];
+			A[i]=A[min];
+			A[min]=temp;
+		}
+	}
+	printf("The sorted array is \n");
+	for(i=0;i<n;i++)
+	{
+		printf("%d\t",A[i]);
+	
+	}
+}
+
+//SAMPLE OUTPUT
+/****************************************************************
+Enter the number of elements: 6
+Enter the array elements: 9
+6
+4
+5
+3
+8
+The sorted array is
+3       4       5       6       8       9
+--------------------------------
+
+********************************************************************/

@@ -1,0 +1,45 @@
+/*****************************************************************
+AINA SHIBU                               ROLL NO:4
+S3 IT                                    
+
+        AVERAGE AND SQUARE OF EACH VALUE IN LIST
+
+*****************************************************************/
+
+list=[]
+slist=[]
+n=int(input("Enter the size of the list:"))
+print("Enter the value of the list:")
+for x in range(0,n):
+	val=int(input())
+	list.append(val)
+print(list)
+count=0
+for y in list:
+	count=count+y
+for y in list:
+	square=y**2
+	slist.append(square)
+print ("The sum of the elements are :",count)
+print("The average of the elements are:",count/n)
+print("The squared list is:",slist)
+
+
+/*SAMPLE OUTPUT*/
+
+/*********************************************************
+Z:\S3IT\PYTHON\LAB>averagelist.py
+Enter the size of the list:5
+Enter the value of the list:
+2
+4
+6
+8
+10
+[2, 4, 6, 8, 10]
+The sum of the elements are : 30
+The average of the elements are: 6.0
+The squared list is: [4, 16, 36, 64, 100]
+
+********************************************************/
+

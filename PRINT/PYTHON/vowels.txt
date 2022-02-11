@@ -1,0 +1,43 @@
+/********************************************************************************
+AINA SHIBU                                     ROLL NO:4
+S3 IT                                          DATE:
+        
+  COUNT NO. OF VOWELS,CONSONENTS,WORDS AND QUESTION MARK IN A GIVEN STRING
+
+*******************************************************************************/
+
+str1 = input("ENTER THE STRING : ")
+vowels = 0
+words = 1
+qm = 0
+consonants = 0
+
+for i in str1:
+	if(i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u'
+		or i == 'A' or i == 'E' or i == 'I' or i == 'O' or i == 'U'):
+		vowels = vowels + 1
+	elif(i==" "):
+		words =words +1
+
+	elif(i=="?"):
+		qm=qm+1
+		
+	else:
+		consonants = consonants + 1
+ 
+print("Total Number of Vowels in the String = ", vowels)
+print("Total Number of Consonants in the String = ", consonants)
+print("Total Number of Words in the String = ", words)
+print("Total Number of Qm in the String =",qm)
+
+/*SAMPLE OUTPUT*/
+
+/********************************************************************
+Z:\S3IT\PYTHON\LAB>vowels.py
+ENTER THE STRING : How old are you?
+Total Number of Vowels in the String =  6
+Total Number of Consonants in the String =  6
+Total Number of Words in the String =  4
+Total Number of Qm in the String = 1
+
+*********************************************************************/

@@ -1,0 +1,58 @@
+/******************************************************************
+
+AINA SHIBU                                  ROLL NO:4
+S3 IT                                       DATE :06/12/21
+
+                INSERTION SORT
+                
+ *****************************************************************/               
+
+
+
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+  int n,key,i ,j,A[50];
+  printf("Enter the number of elements in the array:");
+  scanf("%d",&n);
+  printf("Enter the array elements:");
+  for(i=0;i<n;i++)
+  {
+  	scanf("%d",&A[i]);
+  }
+  for(i=1;i<n;i++)
+  {
+  	key=A[i];
+  	j=i-1;
+  	while(j>=0&&key<A[j])
+	  {
+	  	A[j+1]=A[j];
+	  	j=j-1;
+	  	
+	  }
+	  A[j+1]=key;
+  }
+  printf("The sorted elemenets are:  ");
+  for(i=0;i<n;i++)
+  {
+  	printf("%d\t", A[i]); 
+  }
+}
+
+
+//SAMPLE OUTPUT
+/*****************************************************************
+Enter the number of elements in the array:6
+Enter the array elements:9
+7
+4
+2
+6
+4
+The sorted elemenets are:  2    4       4       6       7       9
+--------------------------------
+
+*****************************************************************/
+
